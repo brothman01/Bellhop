@@ -1,0 +1,59 @@
+{
+	"name": "lity",
+	"title": "Lity",
+	"description": "Lity is a lightweight responsive lightbox plugin that allows for any and/or all images on your site open in a lightbox.",
+	"version": "0.0.1",
+	"slimselect_version": "1.27.1",
+	"tagify_version": "4.12.0",
+	"tested_up_to": "6.0",
+	"author": "Evan Herman",
+	"license": "GPL-2.0",
+	"repository": "EvanHerman/lity",
+	"homepage": "https://wordpress.org/plugins/lity/",
+	"bugs": {
+		"url": "https://github.com/EvanHerman/lity/issues"
+	},
+	"scripts": {
+		"build": "yarn min && rm -rf build/* && rsync -av --mkpath --exclude-from .distignore --delete . build/lity/ && cd build/ && zip -r lity.zip lity/.",
+		"min": "yarn min:css && yarn min:js",
+		"min:js": "minify ./assets/js/lity-script.js > ./assets/js/lity-script.min.js",
+		"min:css": "minify ./assets/css/lity-styles.css > ./assets/css/lity-styles.min.css && minify ./assets/css/tagify/tagify.css > ./assets/css/tagify/tagify.min.css",
+		"install:tests": ".dev/scripts/install-wp-tests.sh wordpress_test root password 127.0.0.1 latest",
+		"install:tests-local": ".dev/scripts/install-wp-tests.sh wordpress_test root '' 127.0.0.1 latest",
+		"test:php": "./vendor/bin/phpunit",
+		"test:php-coverage": "./vendor/bin/phpunit --coverage-html .dev/tests/php/coverage/",
+		"test:php-coverage-text": "./vendor/bin/phpunit --coverage-text",
+		"lint": "yarn lint:css && yarn lint:js",
+		"lint:js": "yarn eslint 'assets/js/*.js'",
+		"lint:css": "yarn stylelint assets/css/*.css",
+		"phpcs": "./vendor/bin/phpcs .",
+		"generate-pot": "wp i18n make-pot . languages/lity.pot --domain=lity --include=lity.php,includes/*.php --subtract-and-merge",
+		"watch": "npm-watch",
+		"prepare": "husky install",
+		"postinstall": "composer install",
+		"version": "grunt version && yarn generate-pot && git add -A .",
+		"postversion": "git push && git push --tags"
+	},
+	"watch": {
+		"min": {
+			"patterns": [
+				"assets/js",
+				"assets/css"
+			],
+			"extensions": "js,css",
+			"quiet": true,
+			"runOnChangeOnly": true,
+			"ignore": "*.min.*"
+		}
+	},
+	"devDependencies": {
+		"eslint": "^8.17.0",
+		"grunt": "^1.5.3",
+		"grunt-text-replace": "^0.4.0",
+		"husky": "^8.0.1",
+		"minify": "^9.1.0",
+		"npm-watch": "^0.11.0",
+		"stylelint": "^14.9.1",
+		"stylelint-config-standard": "^26.0.0"
+	}
+}

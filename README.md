@@ -2,7 +2,7 @@
 	<img src="https://img.shields.io/static/v1?ConciergeWPVersion=&message=v0.1&label=&color=999&style=flat-square">
 </h1>
 
-<h4 align="center">A simple <a href="https://wordpress.org" target="_blank">WordPress</a> plugin to add an easy contact button to the bottom of the page.</h4>
+<h4 align="center">Just a simple <a href="https://wordpress.org" target="_blank">WordPress</a> ConciergeWP is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.</h4>
 
 <p align="center">
 	<a href="https://wordpress.org/" target="_blank">

@@ -1,0 +1,135 @@
+# Copyright (C) 2022 Evan Herman
+# This file is distributed under the same license as the Lity - Responsive Lightbox plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lity - Responsive Lightbox 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lity\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-07-03T11:54:25+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: lity\n"
+
+#. Plugin Name of the plugin
+#: includes/class-settings.php:77
+#: includes/class-settings.php:78
+msgid "Lity - Responsive Lightbox"
+msgstr ""
+
+#. Description of the plugin
+msgid "Ensure when an image is clicked in the post content it opens in a responsive lightbox."
+msgstr ""
+
+#. Author of the plugin
+msgid "Evan Herman"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.evan-herman.com"
+msgstr ""
+
+#: includes/class-settings.php:161
+msgid "Responsive Lightbox Settings."
+msgstr ""
+
+#: includes/class-settings.php:168
+msgid "Show Full Size Image"
+msgstr ""
+
+#: includes/class-settings.php:174
+msgid "Should full size images be shown in the lightbox?"
+msgstr ""
+
+#: includes/class-settings.php:180
+msgid "Usge Background Image"
+msgstr ""
+
+#: includes/class-settings.php:186
+msgid "Should the lightbox use the selected image as a background?"
+msgstr ""
+
+#: includes/class-settings.php:192
+msgid "Show Image Info"
+msgstr ""
+
+#: includes/class-settings.php:198
+msgid "Should the image title and description be shown in the lightbox?"
+msgstr ""
+
+#: includes/class-settings.php:204
+msgid "Disabled on"
+msgstr ""
+
+#. translators: %s is 'not' wrapped in a strong tag.
+#: includes/class-settings.php:212
+msgid "Select specific posts or pages that Lity should %s load on."
+msgstr ""
+
+#: includes/class-settings.php:213
+msgid "not"
+msgstr ""
+
+#: includes/class-settings.php:220
+msgid "Element Selectors"
+msgstr ""
+
+#: includes/class-settings.php:226
+msgid "Specify custom element selectors for images on your site. If left empty, this will just be <code>img</code> and target all images on your site."
+msgstr ""
+
+#: includes/class-settings.php:232
+msgid "Excluded Element Selectors"
+msgstr ""
+
+#: includes/class-settings.php:238
+msgid "Specify element selectors that should be excluded from opening in a lightbox."
+msgstr ""
+
+#: includes/class-settings.php:244
+msgid "Clear Lity Transient Data"
+msgstr ""
+
+#: includes/class-settings.php:250
+msgid "Clearing the transient data will generate new media data. This can be helpful if data isn't displaying properly."
+msgstr ""
+
+#: includes/class-settings.php:264
+msgid "General Settings"
+msgstr ""
+
+#: includes/class-settings.php:282
+#: includes/class-settings.php:311
+#: includes/class-settings.php:340
+msgid "Yes"
+msgstr ""
+
+#: includes/class-settings.php:286
+#: includes/class-settings.php:315
+#: includes/class-settings.php:344
+msgid "No"
+msgstr ""
+
+#: includes/class-settings.php:408
+msgid "(no title)"
+msgstr ""
+
+#: includes/class-settings.php:447
+#: includes/class-settings.php:472
+msgid "Note:"
+msgstr ""
+
+#: includes/class-settings.php:490
+msgid "Clear Lity Transient"
+msgstr ""
+
+#: includes/class-settings.php:521
+msgid "Lity transient data successfully regenerated."
+msgstr ""
+
+#: includes/class-settings.php:534
+msgid "Save Settings"
+msgstr ""
