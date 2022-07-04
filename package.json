@@ -1,0 +1,24 @@
+{
+  "name": "conciergewp",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">ConciergeWP \t<img src=\"https://img.shields.io/static/v1?ConciergeWPVersion=&message=v0.1&label=&color=999&style=flat-square\"> </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brothman01/ConciergeWP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brothman01/ConciergeWP/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "homepage": "https://github.com/brothman01/ConciergeWP#readme"
+}
