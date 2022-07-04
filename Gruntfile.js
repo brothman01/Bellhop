@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       },
       watch: {
         sass: {
-          files: 'assets/css/*.scss',
+          files: ['assets/css/*.scss', 'assets/js/input.js'],
           tasks: ['css'],
           options: {
             livereload: 35729
@@ -39,13 +39,12 @@ module.exports = function(grunt) {
   
     // Default task
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('css', 'sass');
+    grunt.registerTask('css', ['sass','uglify']);
   
     // Load up tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-jslint');
     
   
   };

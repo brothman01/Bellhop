@@ -4,7 +4,7 @@ jQuery( document ).ready( function() {
 
         e.preventDefault();
 
-        window.location.replace('/wp-admin/admin.php?page=statuspage');
+        window.location.replace('/wp-admin/admin.php?page=statuspage'); 
 
     });
 
