@@ -20,6 +20,12 @@
   color: white;
   padding-left: 18%;
   padding-top: 15%;
+  filter: drop-shadow(5px 5px 4px #000);
+}
+
+#conciergewp-button:hover {
+  filter: drop-shadow(5px 5px 4px #000) brightness(120%);
+  cursor: pointer;
 }
 
 #conciergewp-button:before {
