@@ -1,41 +1,13 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
   \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/images/bell-icon.png */ "./src/assets/images/bell-icon.png");
-
-
-
-
-function App() {
-  function toggle() {
-    alert('toggled');
-  }
-
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    id: "conciergewp-button",
-    onClick: toggle
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    id: "conciergewp-button-image",
-    src: _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_2__
-  }));
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/src/App.js: Unexpected token (16:13)\n\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mfunction\u001b[39m toggle() {\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m         alert(\u001b[32m'toggled'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     }\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m\u001b[0m\n    at instantiate (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:72:32)\n    at constructor (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:359:12)\n    at Parser.raise (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:3339:19)\n    at Parser.unexpected (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:3377:16)\n    at Parser.parseClassMemberWithIsStatic (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:15716:12)\n    at Parser.parseClassMember (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:15583:10)\n    at /home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:15523:14\n    at Parser.withSmartMixTopicForbiddingContext (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:14323:14)\n    at Parser.parseClassBody (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:15498:10)\n    at Parser.parseClass (/home/ben/Local Sites/imagebug/app/public/wp-content/plugins/ConciergeWP/node_modules/@babel/parser/lib/index.js:15472:22)");
 
 /***/ }),
 
@@ -45,6 +17,7 @@ function App() {
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -75,29 +48,10 @@ ReactDOM.render((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
-
-/***/ }),
-
-/***/ "./src/assets/images/bell-icon.png":
-/*!*****************************************!*\
-  !*** ./src/assets/images/bell-icon.png ***!
-  \*****************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/bell-icon.eed945f2.png";
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
-/***/ ((module) => {
-
-module.exports = window["React"];
 
 /***/ }),
 
@@ -107,6 +61,7 @@ module.exports = window["React"];
   \*********************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = window["wp"]["element"];
 
 /***/ })
@@ -197,18 +152,6 @@ module.exports = window["wp"]["element"];
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -223,26 +166,6 @@ module.exports = window["wp"]["element"];
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
