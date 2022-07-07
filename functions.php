@@ -17,10 +17,11 @@
  add_action( 'wp_footer', 'footer_hook' );
  
  function footer_hook() {
- 	echo '<div id="render_here" style="width: 24px; height: 24px; background: red; position: fixed; top: 85%; left: 90%;"></div>';
+ 	echo '<div id="render_here" style="position: fixed; top: 85%; left: 90%;"></div>';
  }
  
 function enqueue_script() {
+	wp_enqueue_style( 'style-name', plugin_dir_url( __FILE__ ) . 'build/style-index.css' );
 	wp_enqueue_script( 'test', plugin_dir_url( __FILE__ ) . '/build/index.js', array( 'wp-element' ), '0.1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_script' );
