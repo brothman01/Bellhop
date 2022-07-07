@@ -18,6 +18,8 @@
   line-height: 60px;
   text-align: center;
   color: white;
+  padding-left: 18%;
+  padding-top: 15%;
 }
 
 #conciergewp-button:before {
@@ -29,6 +31,12 @@
   right: 3px;
   bottom: 3px;
   border-radius: 100%;
+}
+
+#conciergewp-button-image {
+  width: 36px;
+  height: 36px;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
