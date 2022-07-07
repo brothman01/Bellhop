@@ -28,11 +28,18 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
     super(props);
 
     (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "toggle", () => {
-      alert('toggled');
+      let clicks = this.state.clicks;
+      this.state.clicks = this.state.clicks + 1;
+
+      if (clicks % 2 == 0) {
+        alert('hide now');
+      } else {
+        alert('show now');
+      }
     });
 
     this.state = {
-      date: new Date()
+      clicks: 1
     };
   }
 

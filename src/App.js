@@ -5,11 +5,17 @@ class App extends React.Component {
 
   constructor( props ) {
     super( props );
-    this.state = { date: new Date() };
+    this.state = { clicks: 1 };
   }
 
   toggle = () => {
-    alert( 'toggled' );
+    let clicks = this.state.clicks;
+    this.state.clicks = this.state.clicks + 1;
+    if ( clicks % 2 == 0 ) {
+      alert( 'hide now' );
+    } else {
+      alert( 'show now' );
+    }
   }
 
   render() {
