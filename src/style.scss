@@ -18,6 +18,7 @@
 	color: white;
 	padding-left: 18%;
 	padding-top: 15%;
+	z-index: 100;
 	filter: drop-shadow(5px 5px 4px #000);
 }
 
@@ -46,6 +47,7 @@
 
   #conciergewp-phone-button {
 	position: absolute;
+	text-align: center;
 	z-index: 4;
 	top: 3px;
 	bottom: 3px;
@@ -57,6 +59,7 @@
 
   #conciergewp-email-button {
 	position: absolute;
+	text-align: center;
 	z-index: 3;
 	top: 3px;
 	bottom: 3px;
