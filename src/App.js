@@ -7,7 +7,7 @@ class App extends React.Component {
   constructor( props ) {
     super( props );
     this.state = {
-      clicks: 1
+      clicks: 0
     };
   }
 

@@ -36,7 +36,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
     });
 
     this.state = {
-      clicks: 1
+      clicks: 0
     };
   }
 
