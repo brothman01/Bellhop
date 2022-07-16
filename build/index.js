@@ -30,16 +30,9 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
     super(props);
 
     (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "toggle", () => {
-      let clicks = this.state.clicks;
-      this.state.clicks = this.state.clicks + 1;
-
-      if (clicks % 2 == 0) {
-        alert('hide now');
-        this.state.top = 'top: 3px; bottom: 3px;';
-      } else {
-        alert('show now');
-        this.state.top = 'top: -50px; bottom: 75px;';
-      }
+      this.setState((prevState, props) => ({
+        clicks: prevState.clicks + 1
+      }));
     });
 
     this.state = {
@@ -49,7 +42,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
 
   render() {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      style: this.state.top
+      clicks: this.state.clicks
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       id: "conciergewp-button",
       onClick: this.toggle
@@ -75,39 +68,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
-
-class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
+class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
   constructor(props) {
     super(props);
-
-    (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "toggle", () => {
-      let clicks = this.state.clicks;
-      this.state.clicks = this.state.clicks + 1;
-
-      if (clicks % 2 == 0) {
-        alert('hide now');
-      } else {
-        alert('show now');
-      }
-    });
-
-    this.state = {
-      clicks: 1
-    };
   }
 
   render() {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    const style = this.props.clicks % 2 == 0 ? {
+      top: '3px',
+      bottom: '3px'
+    } : {
+      top: '-50px',
+      bottom: '75px'
+    };
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
-      onClick: this.toggle
+      onClick: () => alert('test'),
+      style: style
     }, "Phone");
   }
 
