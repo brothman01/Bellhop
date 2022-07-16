@@ -54,6 +54,7 @@
   bottom: 3px;
   border: 1px solid red;
   border-radius: 100%;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
