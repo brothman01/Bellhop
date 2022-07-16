@@ -48,8 +48,6 @@
 	position: absolute;
 	z-index: 4;
 	top: 3px;
-	left: 3px;
-	right: 3px;
 	bottom: 3px;
 	border: 1px solid red;
 	border-radius: 100%;
@@ -61,8 +59,6 @@
 	position: absolute;
 	z-index: 3;
 	top: 3px;
-	left: 3px;
-	right: 3px;
 	bottom: 3px;
 	border: 1px solid green;
 	border-radius: 100%;
@@ -71,13 +67,19 @@
   }
 
   .hidden {
-	// transition: left .3s ease, right .3s ease;
+	transition: left .3s ease, right .3s ease;
 	left: 3px;
 	right: 3px;
   }
 
   .showing_phone {
-	// transition: 'left .3s ease, right .3s ease'
+	transition: left .3s ease, right .3s ease;
 	left: -75px;
 	right: 75px;
+  }
+
+  .showing_email {
+	transition: left .3s ease, right .3s ease;
+	left: -155px;
+	right: 155px;
   }

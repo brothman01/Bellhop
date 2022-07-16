@@ -94,10 +94,11 @@ class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
       left: '-155px',
       right: '155px'
     };
+    const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_email';
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-email-button",
       onClick: () => alert('test'),
-      style: style
+      className: displ
     }, "Email");
   }
 
@@ -138,12 +139,12 @@ class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
       transition: 'left .3s ease, right .3s ease',
       left: '-75px',
       right: '75px'
-    }; // const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
-
+    };
+    const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
       onClick: () => alert('test'),
-      style: style
+      className: displ
     }, "Phone");
   }
 
