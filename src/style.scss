@@ -16,8 +16,7 @@
 	line-height: 60px;
 	text-align: center;
 	color: white;
-	padding-left: 18%;
-	padding-top: 15%;
+	padding-top: 25%;
 	z-index: 100;
 	filter: drop-shadow(5px 5px 4px #000);
 }
@@ -35,7 +34,6 @@
 	left: 3px;
 	right: 3px;
 	bottom: 3px;
-	// border: 1px solid black;
 	border-radius: 100%;
   }
 
@@ -51,10 +49,6 @@
 	z-index: 4;
 	top: 3px;
 	bottom: 3px;
-	border: 1px solid red;
-	border-radius: 100%;
-
-	pointer-events: none;
   }
 
   #conciergewp-email-button {
@@ -63,10 +57,6 @@
 	z-index: 3;
 	top: 3px;
 	bottom: 3px;
-	border: 1px solid green;
-	border-radius: 100%;
-
-	pointer-events: none;
   }
 
   .hidden {
@@ -85,4 +75,19 @@
 	transition: left .3s ease, right .3s ease;
 	left: -155px;
 	right: 155px;
+  }
+
+  .sub-button {
+	border-radius: 100%;
+	background: #008080;
+	border: solid white 3px;
+	outline: solid black 1px;
+	position: relative;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+	padding-top: 25%;
+	z-index: 100;
+	border-radius: 100%;
+	cursor: pointer;
   }

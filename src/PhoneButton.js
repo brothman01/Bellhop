@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import phone from './assets/images/phone-icon.png';
 
 class PhoneButton extends React.Component {
 
@@ -7,12 +8,10 @@ class PhoneButton extends React.Component {
   }
 
   render() {
-    const style = this.props.clicks % 2 == 0 ? { transition: 'left .3s ease, right .3s ease', left: '3px', right: '3px' } : { transition: 'left .3s ease, right .3s ease', left: '-75px', right: '75px' }
     const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
     return (
-      <div id="conciergewp-phone-button" onClick={() => alert('test')} className={displ} >
-        {/* style={style} */}
-        Phone
+      <div id="conciergewp-phone-button" onClick={() => alert('test')} className={`sub-button ${displ}`} >
+        <img id="conciergewp-button-image" src={phone} />
       </div>
     );
   }
