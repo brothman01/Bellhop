@@ -7,7 +7,7 @@ class PhoneButton extends React.Component {
   }
 
   render() {
-    const style = this.props.clicks % 2 == 0 ? { top: '3px', bottom: '3px' } : { top: '-50px', bottom: '75px' }
+    const style = this.props.clicks % 2 == 0 ? { left: '3px', right: '3px' } : { left: '-75px', right: '75px' }
     return (
       <div id="conciergewp-phone-button" onClick={() => alert('test')} style={style}>
         Phone

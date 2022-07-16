@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import bell from './assets/images/bell-icon.png';
 import PhoneButton from './PhoneButton.js';
+import EmailButton from './EmailButton.js';
 
 class App extends React.Component {
 
@@ -20,10 +21,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-          <PhoneButton clicks={this.state.clicks} />
-          <div id="conciergewp-button" onClick={this.toggle}>
-            <img id="conciergewp-button-image" src={bell} />
-          </div>
+        <PhoneButton clicks={this.state.clicks} />
+        <EmailButton clicks={this.state.clicks} />
+        <div id="conciergewp-button" onClick={this.toggle}>
+          <img id="conciergewp-button-image" src={bell} />
+        </div>
       </div>
     );
   }

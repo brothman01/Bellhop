@@ -19,6 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/bell-icon.png */ "./src/assets/images/bell-icon.png");
 /* harmony import */ var _PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PhoneButton.js */ "./src/PhoneButton.js");
+/* harmony import */ var _EmailButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./EmailButton.js */ "./src/EmailButton.js");
+
 
 
 
@@ -43,6 +45,8 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
   render() {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       clicks: this.state.clicks
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_EmailButton_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      clicks: this.state.clicks
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       id: "conciergewp-button",
       onClick: this.toggle
@@ -55,6 +59,49 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./src/EmailButton.js":
+/*!****************************!*\
+  !*** ./src/EmailButton.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const style = this.props.clicks % 2 == 0 ? {
+      left: '3px',
+      right: '3px'
+    } : {
+      left: '-155px',
+      right: '155px'
+    };
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "conciergewp-email-button",
+      onClick: () => alert('test'),
+      style: style
+    }, "Email");
+  }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmailButton);
 
 /***/ }),
 
@@ -82,11 +129,11 @@ class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
 
   render() {
     const style = this.props.clicks % 2 == 0 ? {
-      top: '3px',
-      bottom: '3px'
+      left: '3px',
+      right: '3px'
     } : {
-      top: '-50px',
-      bottom: '75px'
+      left: '-75px',
+      right: '75px'
     };
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
