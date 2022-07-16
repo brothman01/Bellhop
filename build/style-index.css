@@ -47,7 +47,7 @@
 
 #conciergewp-phone-button {
   position: absolute;
-  z-index: 5;
+  z-index: 4;
   top: 3px;
   left: 3px;
   right: 3px;
@@ -59,7 +59,7 @@
 
 #conciergewp-email-button {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   top: 3px;
   left: 3px;
   right: 3px;
@@ -67,6 +67,16 @@
   border: 1px solid green;
   border-radius: 100%;
   pointer-events: none;
+}
+
+.hidden {
+  left: 3px;
+  right: 3px;
+}
+
+.showing_phone {
+  left: -75px;
+  right: 75px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

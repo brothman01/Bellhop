@@ -86,9 +86,11 @@ class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
 
   render() {
     const style = this.props.clicks % 2 == 0 ? {
+      transition: 'left .3s ease, right .3s ease',
       left: '3px',
       right: '3px'
     } : {
+      transition: 'left .3s ease, right .3s ease',
       left: '-155px',
       right: '155px'
     };
@@ -129,12 +131,15 @@ class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
 
   render() {
     const style = this.props.clicks % 2 == 0 ? {
+      transition: 'left .3s ease, right .3s ease',
       left: '3px',
       right: '3px'
     } : {
+      transition: 'left .3s ease, right .3s ease',
       left: '-75px',
       right: '75px'
-    };
+    }; // const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
+
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
       onClick: () => alert('test'),
