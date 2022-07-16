@@ -1,0 +1,45 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+#conciergewp-button {
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background: #008080;
+	border: solid white 3px;
+	outline: solid black 1px;
+	position: relative;
+	line-height: 60px;
+	text-align: center;
+	color: white;
+	padding-left: 18%;
+	padding-top: 15%;
+	filter: drop-shadow(5px 5px 4px #000);
+}
+
+#conciergewp-button:hover {
+	filter: drop-shadow(5px 5px 4px #000) brightness(120%);
+	cursor: pointer;
+}
+
+#conciergewp-button:before {
+	content: " ";
+	position: absolute;
+	z-index: 5;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	// border: 1px solid black;
+	border-radius: 100%;
+  }
+
+  #conciergewp-button-image {
+	width: 36px;
+	height: 36px;
+	pointer-events: none;
+  }
