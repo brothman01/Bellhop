@@ -18,6 +18,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/images/bell-icon.png */ "./src/assets/images/bell-icon.png");
+/* harmony import */ var _components_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/PhoneButton.js */ "./src/components/PhoneButton.js");
+/* harmony import */ var _components_EmailButton_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/EmailButton.js */ "./src/components/EmailButton.js");
+
+
 
 
 
@@ -28,34 +32,126 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
     super(props);
 
     (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "toggle", () => {
-      let clicks = this.state.clicks;
-      this.state.clicks = this.state.clicks + 1;
-
-      if (clicks % 2 == 0) {
-        alert('hide now');
-      } else {
-        alert('show now');
-      }
+      this.setState(prevState => ({
+        clicks: prevState.clicks + 1
+      }));
     });
 
     this.state = {
-      clicks: 1
+      clicks: 0
     };
   }
 
   render() {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_components_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      clicks: this.state.clicks
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_components_EmailButton_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      clicks: this.state.clicks
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       id: "conciergewp-button",
       onClick: this.toggle
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
       id: "conciergewp-button-image",
       src: _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_3__
-    }));
+    })));
   }
 
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+/***/ }),
+
+/***/ "./src/components/EmailButton.js":
+/*!***************************************!*\
+  !*** ./src/components/EmailButton.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_images_email_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/email-icon.png */ "./src/assets/images/email-icon.png");
+
+
+
+
+class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const style = this.props.clicks % 2 == 0 ? {
+      transition: 'left .3s ease, right .3s ease',
+      left: '3px',
+      right: '3px'
+    } : {
+      transition: 'left .3s ease, right .3s ease',
+      left: '-155px',
+      right: '155px'
+    };
+    const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_email';
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "conciergewp-email-button",
+      onClick: () => alert('test'),
+      className: `sub-button ${displ}`
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      id: "conciergewp-button-image",
+      src: _assets_images_email_icon_png__WEBPACK_IMPORTED_MODULE_2__
+    }));
+  }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmailButton);
+
+/***/ }),
+
+/***/ "./src/components/PhoneButton.js":
+/*!***************************************!*\
+  !*** ./src/components/PhoneButton.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_images_phone_icon_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/images/phone-icon.png */ "./src/assets/images/phone-icon.png");
+
+
+
+
+class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Component) {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      id: "conciergewp-phone-button",
+      onClick: () => alert('test'),
+      className: `sub-button ${displ}`
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      id: "conciergewp-button-image",
+      src: _assets_images_phone_icon_png__WEBPACK_IMPORTED_MODULE_2__
+    }));
+  }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PhoneButton);
 
 /***/ }),
 
@@ -107,7 +203,27 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "images/bell-icon.eed945f2.png";
+module.exports = __webpack_require__.p + "images/bell-icon.991f15b6.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/email-icon.png":
+/*!******************************************!*\
+  !*** ./src/assets/images/email-icon.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/email-icon.cd94744a.png";
+
+/***/ }),
+
+/***/ "./src/assets/images/phone-icon.png":
+/*!******************************************!*\
+  !*** ./src/assets/images/phone-icon.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/phone-icon.ee5097c2.png";
 
 /***/ }),
 

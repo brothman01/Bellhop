@@ -18,8 +18,7 @@
   line-height: 60px;
   text-align: center;
   color: white;
-  padding-left: 18%;
-  padding-top: 15%;
+  z-index: 100;
   filter: drop-shadow(5px 5px 4px #000);
 }
 
@@ -42,7 +41,58 @@
 #conciergewp-button-image {
   width: 36px;
   height: 36px;
+  padding-top: 15%;
   pointer-events: none;
+}
+
+#conciergewp-phone-button {
+  position: absolute;
+  text-align: center;
+  z-index: 4;
+  top: 3px;
+  bottom: 3px;
+}
+
+#conciergewp-email-button {
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+  top: 3px;
+  bottom: 3px;
+}
+
+.hidden {
+  transition: left 0.3s ease, right 0.3s ease;
+  left: 3px;
+  right: 3px;
+}
+
+.showing_phone {
+  transition: left 0.3s ease, right 0.3s ease;
+  left: -75px;
+  right: 75px;
+}
+
+.showing_email {
+  transition: left 0.3s ease, right 0.3s ease;
+  left: -155px;
+  right: 155px;
+}
+
+.sub-button {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  background: #008080;
+  border: solid white 3px;
+  outline: solid black 1px;
+  position: relative;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  z-index: 100;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
