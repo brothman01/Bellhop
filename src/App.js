@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import bell from './assets/images/bell-icon.png';
-import PhoneButton from './PhoneButton.js';
-import EmailButton from './EmailButton.js';
+import PhoneButton from './components/PhoneButton.js';
+import EmailButton from './components/EmailButton.js';
 
 class App extends React.Component {
 
@@ -13,7 +13,7 @@ class App extends React.Component {
   }
 
   toggle = () => {
-    this.setState( ( prevState, props ) => ( {
+    this.setState( ( prevState ) => ( {
       clicks: prevState.clicks + 1
     } ) );
   }

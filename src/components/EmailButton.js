@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import email from './assets/images/email-icon.png';
+import email from '../assets/images/email-icon.png';
 
 class EmailButton extends React.Component {
 

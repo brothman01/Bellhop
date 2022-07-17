@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import phone from './assets/images/phone-icon.png';
+import phone from '../assets/images/phone-icon.png';
 
 class PhoneButton extends React.Component {
 
