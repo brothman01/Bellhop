@@ -43,17 +43,21 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
   }
 
   render() {
+    const phonenum = php.phonenumber;
+    const email = php.emailaddress;
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_components_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      clicks: this.state.clicks
+      clicks: this.state.clicks,
+      phonenumber: phonenum
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_components_EmailButton_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      clicks: this.state.clicks
+      clicks: this.state.clicks,
+      email: email
     }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       id: "conciergewp-button",
       onClick: this.toggle
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
       id: "conciergewp-button-image",
       src: _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_3__
-    }), php.var1));
+    })));
   }
 
 }
@@ -97,14 +101,17 @@ class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
       right: '155px'
     };
     const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_email';
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    const emailaddress = this.props.email;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+      href: "mailto:" + emailaddress
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-email-button",
       onClick: () => alert('test'),
       className: `sub-button ${displ}`
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       id: "conciergewp-button-image",
       src: _assets_images_email_icon_png__WEBPACK_IMPORTED_MODULE_2__
-    }));
+    })));
   }
 
 }
@@ -139,14 +146,17 @@ class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
 
   render() {
     const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    const phonenumber = this.props.phonenumber;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+      href: "tel:" + phonenumber
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
       onClick: () => alert('test'),
       className: `sub-button ${displ}`
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       id: "conciergewp-button-image",
       src: _assets_images_phone_icon_png__WEBPACK_IMPORTED_MODULE_2__
-    }));
+    })));
   }
 
 }

@@ -19,13 +19,15 @@ class App extends React.Component {
   }
 
   render() {
+    const phonenum = php.phonenumber;
+    const email = php.emailaddress;
     return (
       <div>
-        <PhoneButton clicks={this.state.clicks} />
-        <EmailButton clicks={this.state.clicks} />
+        <PhoneButton clicks={this.state.clicks} phonenumber={phonenum} />
+        <EmailButton clicks={this.state.clicks} email={email}/>
         <div id="conciergewp-button" onClick={this.toggle}>
           <img id="conciergewp-button-image" src={bell} />
-          {php.var1}
+
         </div>
       </div>
     );

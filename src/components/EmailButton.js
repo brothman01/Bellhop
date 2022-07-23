@@ -10,10 +10,13 @@ class EmailButton extends React.Component {
   render() {
     const style = this.props.clicks % 2 == 0 ? { transition: 'left .3s ease, right .3s ease', left: '3px', right: '3px' } : { transition: 'left .3s ease, right .3s ease', left: '-155px', right: '155px' }
     const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_email';
+    const emailaddress = this.props.email;
     return (
+      <a href={"mailto:" + emailaddress}>
       <div id="conciergewp-email-button" onClick={() => alert('test')} className={`sub-button ${displ}`}>
         <img id="conciergewp-button-image" src={email} />
       </div>
+      </a>
     );
   }
 }
