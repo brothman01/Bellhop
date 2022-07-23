@@ -9,10 +9,10 @@ class PhoneButton extends React.Component {
 
   render() {
     const displ = this.props.clicks % 2 == 0 ? 'hidden' : 'showing_phone';
-    const phonenumber = this.props.phonenumber
+    const phonenumber = this.props.phonenumber;
     return (
       <a href={"tel:" + phonenumber}>
-        <div id="conciergewp-phone-button" onClick={() => alert('test')} className={`sub-button ${displ}`} >
+        <div id="conciergewp-phone-button" className={`sub-button ${displ}`} >
           <img id="conciergewp-button-image" src={phone} />
         </div>
       </a>

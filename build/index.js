@@ -106,7 +106,6 @@ class EmailButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
       href: "mailto:" + emailaddress
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-email-button",
-      onClick: () => alert('test'),
       className: `sub-button ${displ}`
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       id: "conciergewp-button-image",
@@ -151,7 +150,6 @@ class PhoneButton extends (react__WEBPACK_IMPORTED_MODULE_1___default().Componen
       href: "tel:" + phonenumber
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       id: "conciergewp-phone-button",
-      onClick: () => alert('test'),
       className: `sub-button ${displ}`
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
       id: "conciergewp-button-image",

@@ -73,10 +73,12 @@ function cwp_phone_cb( $args ) {
 	<!-- output the html for the field being added -->
     <input
             id="<?php echo esc_attr( $args['label_for'] ); ?>"
-            type="number"
+            type="tel" id="phone"
             name="cwp_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 			value="<?php echo $options['cwp_field_phone'] ?>">
-	</input
+</input><br />
+    <p className="description">This is the phone number that visitors to your site will call when they press the phone button.</p>
     <?php
 }
 
@@ -93,7 +95,9 @@ function cwp_email_cb( $args ) {
             type="email"
             name="cwp_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
 			value="<?php echo $options['cwp_field_email'] ?>">
-	</input
+    </input><br />
+    <p className="description">This is the email address that visitors to your site will email when they press the email button.</p>
+
     <?php
 }
  
