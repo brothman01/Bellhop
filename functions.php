@@ -50,7 +50,7 @@ require_once('settings.php');
 	function cwp_enqueue_script() {
 		wp_enqueue_style( 'style', plugin_dir_url( __FILE__ ) . 'build/style-index.css' );
 
-		wp_register_script( 'react-code', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
+		wp_register_script( 'conciergewp-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
 
 		$settings = get_option('cwp_options');
 
@@ -58,9 +58,9 @@ require_once('settings.php');
 			'phonenumber'  => $settings['cwp_field_phone'],
 			'emailaddress' => $settings['cwp_field_email']
 		);
-		wp_localize_script( 'react-code', 'cwp_settings', $the_data );
+		wp_localize_script( 'conciergewp-react', 'cwp_settings', $the_data );
 
-		wp_enqueue_script( 'react-code' );
+		wp_enqueue_script( 'conciergewp-react' );
 
 	}
 
