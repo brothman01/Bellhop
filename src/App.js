@@ -19,8 +19,8 @@ class App extends React.Component {
   }
 
   render() {
-    const phonenum = php.phonenumber;
-    const email = php.emailaddress;
+    const phonenum = cwp_settings.phonenumber;
+    const email = cwp_settings.emailaddress;
     return (
       <div>
         <PhoneButton clicks={this.state.clicks} phonenumber={phonenum} />

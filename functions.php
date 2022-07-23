@@ -58,7 +58,7 @@ require_once('settings.php');
 			'phonenumber'  => $settings['cwp_field_phone'],
 			'emailaddress' => $settings['cwp_field_email']
 		);
-		wp_localize_script( 'react-code', 'php', $the_data );
+		wp_localize_script( 'react-code', 'cwp_settings', $the_data );
 
 		wp_enqueue_script( 'react-code' );
 
