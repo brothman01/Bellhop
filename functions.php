@@ -43,7 +43,7 @@ require_once('settings.php');
 	}
 
 	/**
-	 * Enqueue the style and react used by this plugin.
+	 * Enqueue the style and react used by this plugin with the settings localized.
 	 *
 	 * @since 0.1
 	 */

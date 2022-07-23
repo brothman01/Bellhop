@@ -2,7 +2,7 @@
 	<img src="https://img.shields.io/static/v1?ConciergeWPVersion=&message=v0.1&label=&color=999&style=flat-square">
 </h1>
 
-<h4 align="center">Just a simple <a href="https://wordpress.org" target="_blank">WordPress</a> ConciergeWP is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.</h4>
+<h4 align="center">Just a simple <a href="https://wordpress.org" target="_blank">WordPress</a> plugin that adds a lightweight, responsive bellhop button that allows any visitors to your site to contact the front desk easily and in several ways.</h4>
 
 <p align="center">
 	<a href="https://wordpress.org/" target="_blank">
@@ -20,7 +20,7 @@
 - Enjoy :)
 
 ## Initial Setup
-The plugin adds a simple contact menu for phone or email to the bottom of each page when the small bell icon is pushed.  The information displayed by the menu can be set from the WordPress dashboard in "Settings > ConciergeWP".  By default, when a user clicks the ConciergeWP icon, additional buttons for email and phone pop out to the left.  If the email field on the settings page is not filled out, the email button will not be displayed and the same goes for the phone button.  The ability to add more, custom contact buttons is a planned feature, but at this time it is impossible.
+Upon activation this plugin adds a simple contact menu for phone or email to the bottom of every page, and a 'ConciergeWP' button to the dashboard to allow you to easily customize it. The information displayed by the menu can be set from the WordPress dashboard on the ConciergeWP settings page.  By default, when a user clicks the ConciergeWP icon, additional buttons for email and phone pop out to the left.
 
 ## License
 
