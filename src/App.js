@@ -25,6 +25,7 @@ class App extends React.Component {
         <EmailButton clicks={this.state.clicks} />
         <div id="conciergewp-button" onClick={this.toggle}>
           <img id="conciergewp-button-image" src={bell} />
+          {php.var1}
         </div>
       </div>
     );

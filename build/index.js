@@ -53,7 +53,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
     }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("img", {
       id: "conciergewp-button-image",
       src: _assets_images_bell_icon_png__WEBPACK_IMPORTED_MODULE_3__
-    })));
+    }), php.var1));
   }
 
 }
