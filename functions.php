@@ -3,8 +3,8 @@
  * Plugin Name:       ConciergeWP
  * Description:       Just a simple WordPress ConciergeWP is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 5.9
- * Requires PHP:      7.0
- * Version:           0.1
+ * Tested Up To:      6.1
+ * Version:           1.0.0
  * Author:            Ben Rothman
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
