@@ -16,8 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'unauthorized' );
 }
 
-require_once('settings.php');
-
  class ConciergeWP {
 
 	/**
@@ -30,6 +28,8 @@ require_once('settings.php');
 		add_action( 'wp_footer', array( $this,'cwp_footer_hook' ) );
 
 		add_action( 'wp_enqueue_scripts', array( $this,'cwp_enqueue_script' ) );
+
+		require_once('settings.php'); // add the settings page
 
 	}
 
