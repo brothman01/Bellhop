@@ -52,7 +52,7 @@ require_once('settings.php');
 
 		wp_register_script( 'Bellhop-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
 
-		$settings = get_option('cwp_options');
+		$settings = get_option('bh_options');
 
 		$the_data = array(
 			'phonenumber'  => $settings['bh_field_phone'],
