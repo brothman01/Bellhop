@@ -1,35 +1,35 @@
 <?php
 /**
  * Plugin Name:       Bellhop
- * Description:       Just a simple WordPress plugin, Bellhop is a lightweight contact button that allows for any visitors to your site to contact the front desk easily and in several ways.
+ * Description:       Just a simple WordPress Bellhop is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 5.9
  * Tested Up To:      6.1
  * Version:           1.0.0
  * Author:            Ben Rothman
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       bellhop
+ * Text Domain:       Bellhop
  *
- * @package           bellhop
+ * @package           Bellhop
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'unauthorized' );
 }
 
- class ConciergeWP {
+require_once('settings.php');
+
+ class Bellhop {
 
 	/**
-	 * ConciergeWP class constructor
+	 * Bellhop class constructor
 	 *
 	 * @since 0.1
 	 */
 	public function __construct() {
 
-		add_action( 'wp_footer', array( $this,'cwp_footer_hook' ) );
+		add_action( 'wp_footer', array( $this,'bh_footer_hook' ) );
 
-		add_action( 'wp_enqueue_scripts', array( $this,'cwp_enqueue_script' ) );
-
-		require_once('settings.php'); // add the settings page
+		add_action( 'wp_enqueue_scripts', array( $this,'bh_enqueue_script' ) );
 
 	}
 
@@ -38,7 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 *
 	 * @since 0.1
 	 */
-	public function cwp_footer_hook() {
+	public function bh_footer_hook() {
 		echo '<div id="render_here" style="position: fixed; top: 85%; left: 90%;"></div>';
 	}
 
@@ -47,10 +47,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 *
 	 * @since 0.1
 	 */
-	function cwp_enqueue_script() {
+	function bh_enqueue_script() {
 		wp_enqueue_style( 'style', plugin_dir_url( __FILE__ ) . 'build/style-index.css' );
 
-		wp_register_script( 'conciergewp-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
+		wp_register_script( 'Bellhop-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
 
 		$settings = get_option('cwp_options');
 
@@ -58,12 +58,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			'phonenumber'  => $settings['bh_field_phone'],
 			'emailaddress' => $settings['bh_field_email']
 		);
-		wp_localize_script( 'conciergewp-react', 'bh_settings', $the_data );
+		wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
 
-		wp_enqueue_script( 'conciergewp-react' );
+		wp_enqueue_script( 'Bellhop-react' );
 
 	}
 
  }
 
- new ConciergeWP();
+ new Bellhop();

@@ -19,10 +19,10 @@ add_action( 'admin_menu', 'bh_options_page' );
  * Register the setting, initialize and add the section + fields to the section
  */
 function bh_settings_init() {
-    // Register a new setting for "cwp" page.
-    register_setting(  'bh', 'bh_options' );
+    // Register a new setting for "bh" page.
+    register_setting( 'bh', 'bh_options' );
  
-    // Register a new section in the "cwp" page.
+    // Register a new section in the "bh" page.
     add_settings_section(
         'bh_settings_section',
         __( 'General', 'bh' ), NULL,
@@ -30,7 +30,7 @@ function bh_settings_init() {
     );
  
 
-	    // Register a new field in the "cwp_settings_section" section, on the "cwp" page.
+	    // Register a new field in the "bh_settings_section" section, on the "bh" page.
 		add_settings_field(
 			'bh_field_phone', // As of WP 4.6 this value is used only internally.
 									// Use $args' label_for to populate the id inside the callback.
@@ -44,7 +44,7 @@ function bh_settings_init() {
 			)
 		);
 
-        // Register a new field in the "cwp_settings_section" section, on the "cwp" page.
+        // Register a new field in the "bh_settings_section" section, on the "bh" page.
 		add_settings_field(
 			'bh_field_email', // As of WP 4.6 this value is used only internally.
 									// Use $args' label_for to populate the id inside the callback.
@@ -118,10 +118,10 @@ function bh_options_page_html() {
         <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
         <form action="options.php" method="post">
             <?php
-            // output security fields for the registered setting "cwp"
+            // output security fields for the registered setting "bh"
             settings_fields( 'bh' );
 
-            // output setting sections and their fields.  sections are registered for "cwp", each field is registered to a section
+            // output setting sections and their fields.  sections are registered for "bh", each field is registered to a section
             do_settings_sections( 'bh' );
 
             // output save settings button

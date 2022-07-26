@@ -43,8 +43,8 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_2___default().Component) {
   }
 
   render() {
-    const phonenum = cwp_settings.phonenumber;
-    const email = cwp_settings.emailaddress;
+    const phonenum = bh_settings.phonenumber;
+    const email = bh_settings.emailaddress;
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_components_PhoneButton_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
       clicks: this.state.clicks,
       phonenumber: phonenum
