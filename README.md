@@ -1,4 +1,4 @@
-<h1 align="center">ConciergeWP
+<h1 align="center">Bellhop
 	<img src="https://img.shields.io/static/v1?ConciergeWPVersion=&message=v1.0.0&label=&color=999&style=flat-square">
 </h1>
 
@@ -20,7 +20,7 @@
 - Enjoy :)
 
 ## Initial Setup
-Upon activation this plugin adds a simple contact menu for phone or email to the bottom of every page, and a 'ConciergeWP' button to the dashboard to allow you to easily customize it. The information displayed by the menu can be set from the WordPress dashboard on the ConciergeWP settings page.  By default, when a user clicks the ConciergeWP icon, additional buttons for email and phone pop out to the left.
+Upon activation this plugin adds a simple contact menu for phone or email to the bottom of every page, and a 'Bellhop' button to the dashboard to allow you to easily customize it. The information displayed by the menu can be set from the WordPress dashboard on the Bellhop settings page.  By default, when a user clicks the Bellhop icon, additional buttons for email and phone pop out to the left.
 
 ## License
 

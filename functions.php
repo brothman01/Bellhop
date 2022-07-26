@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name:       ConciergeWP
- * Description:       Just a simple WordPress ConciergeWP is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
+ * Plugin Name:       Bellhop
+ * Description:       Just a simple WordPress plugin, Bellhop is a lightweight contact button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 5.9
  * Tested Up To:      6.1
  * Version:           1.0.0
  * Author:            Ben Rothman
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       conciergewp
+ * Text Domain:       bellhop
  *
- * @package           conciergewp
+ * @package           bellhop
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	die( 'unauthorized' );
@@ -55,10 +55,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$settings = get_option('cwp_options');
 
 		$the_data = array(
-			'phonenumber'  => $settings['cwp_field_phone'],
-			'emailaddress' => $settings['cwp_field_email']
+			'phonenumber'  => $settings['bh_field_phone'],
+			'emailaddress' => $settings['bh_field_email']
 		);
-		wp_localize_script( 'conciergewp-react', 'cwp_settings', $the_data );
+		wp_localize_script( 'conciergewp-react', 'bh_settings', $the_data );
 
 		wp_enqueue_script( 'conciergewp-react' );
 

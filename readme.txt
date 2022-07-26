@@ -1,6 +1,6 @@
-=== ConciergeWP ===
+=== Bellhop ===
 Contributors: brothman01
-Tags: react, bellhop, contact, real estate, real-estate, support
+Tags: react, bellhop, contact, real estate, real-estate, support, concierge
 Requires at least: 4.2
 Tested up to: 6.1
 Stable tag: 1.0.0
