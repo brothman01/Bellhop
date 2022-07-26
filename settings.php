@@ -8,7 +8,8 @@ function bh_options_page() {
         'Bellhop',
         'manage_options',
         'bh',
-        'bh_options_page_html'
+        'bh_options_page_html',
+        'dashicons-bell'
     );
 }
 
