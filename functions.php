@@ -54,11 +54,15 @@ require_once('settings.php');
 
 		$settings = get_option('bh_options');
 
-		$the_data = array(
-			'phonenumber'  => $settings['bh_field_phone'],
-			'emailaddress' => $settings['bh_field_email']
-		);
-		wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
+		if ( $settings ) {
+
+			$the_data = array(
+				'phonenumber'  => $settings['bh_field_phone'],
+				'emailaddress' => $settings['bh_field_email']
+			);
+			wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
+			
+		}
 
 		wp_enqueue_script( 'Bellhop-react' );
 
