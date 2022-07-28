@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       dev: {
         files: {
            // destination     // source file
-          'assets/css/conciergewp.css': 'assets/css/conciergewp.scss'
+          'assets/css/bellhop.css': 'assets/css/bellhop.scss'
                 }
               }
             }

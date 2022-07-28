@@ -12,8 +12,8 @@ class PhoneButton extends React.Component {
     const phonenumber = this.props.phonenumber;
     return (
       <a href={"tel:" + phonenumber}>
-        <div id="conciergewp-phone-button" className={`sub-button ${displ}`} >
-          <img id="conciergewp-button-image" src={phone} />
+        <div id="bellhop-phone-button" className={`sub-button ${displ}`} >
+          <img id="bellhop-button-image" src={phone} />
         </div>
       </a>
     );

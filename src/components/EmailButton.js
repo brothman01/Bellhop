@@ -13,8 +13,8 @@ class EmailButton extends React.Component {
     const emailaddress = this.props.email;
     return (
       <a href={"mailto:" + emailaddress}>
-      <div id="conciergewp-email-button" className={`sub-button ${displ}`}>
-        <img id="conciergewp-button-image" src={email} />
+      <div id="bellhop-email-button" className={`sub-button ${displ}`}>
+        <img id="bellhop-button-image" src={email} />
       </div>
       </a>
     );

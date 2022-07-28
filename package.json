@@ -1,5 +1,5 @@
 {
-	"name": "conciergewp",
+	"name": "bellhop",
 	"version": "1.0.0",
 	"description": "Just a simple boilerplate to develop a plugin for WordPress that uses react.  This is the minimum needed for a react plugin, you can add goodies later.",
 	"author": "Ben Rothman",

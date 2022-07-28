@@ -5,7 +5,7 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-#conciergewp-button {
+#bellhop-button {
 	width: 64px;
 	height: 64px;
 	border-radius: 100%;
@@ -20,12 +20,12 @@
 	filter: drop-shadow(5px 5px 4px #000);
 }
 
-#conciergewp-button:hover {
+#bellhop-button:hover {
 	filter: drop-shadow(5px 5px 4px #000) brightness(120%);
 	cursor: pointer;
 }
 
-#conciergewp-button:before {
+#bellhop-button:before {
 	content: " ";
 	position: absolute;
 	z-index: 5;
@@ -36,14 +36,14 @@
 	border-radius: 100%;
   }
 
-  #conciergewp-button-image {
+  #bellhop-button-image {
 	width: 36px;
 	height: 36px;
 	padding-top: 15%;
 	pointer-events: none;
   }
 
-  #conciergewp-phone-button {
+  #bellhop-phone-button {
 	position: absolute;
 	text-align: center;
 	z-index: 4;
@@ -51,7 +51,7 @@
 	bottom: 3px;
   }
 
-  #conciergewp-email-button {
+  #bellhop-email-button {
 	position: absolute;
 	text-align: center;
 	z-index: 3;

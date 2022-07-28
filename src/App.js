@@ -25,8 +25,8 @@ class App extends React.Component {
       <div>
         <PhoneButton clicks={this.state.clicks} phonenumber={phonenum} />
         <EmailButton clicks={this.state.clicks} email={email}/>
-        <div id="conciergewp-button" onClick={this.toggle}>
-          <img id="conciergewp-button-image" src={bell} />
+        <div id="bellhop-button" onClick={this.toggle}>
+          <img id="bellhop-button-image" src={bell} />
 
         </div>
       </div>
