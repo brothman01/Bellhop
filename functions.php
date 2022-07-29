@@ -48,29 +48,29 @@ require_once('settings.php');
 	 * @since 0.1
 	 */
 	function bh_enqueue_script() {
+
+		$settings = bh_get_options();
+
+		if ( empty( $settings['bh_field_phone'] ) && empty( $settings['bh_field_email'] ) ) {
+
+			return;
+
+		}
+
 		wp_enqueue_style( 'style', plugin_dir_url( __FILE__ ) . 'build/style-index.css' );
 
 		wp_register_script( 'Bellhop-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
 
-		$settings = bh_get_options();
-
-		// if ( empty( $settings['bh_field_phone'] ) && empty( $settings['bh_field_email'] ) ) {
-		// 	return;
-		// }
-
-
-			$the_data = array(
-				'phonenumber'  => $settings['bh_field_phone'],
-				'emailaddress' => $settings['bh_field_email'],
-			);
+		$the_data = array(
+			'phonenumber'  => $settings['bh_field_phone'],
+			'emailaddress' => $settings['bh_field_email'],
+		);
 
 		wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
-			
 
 		wp_enqueue_script( 'Bellhop-react' );
 
 	}
-
 
  }
 

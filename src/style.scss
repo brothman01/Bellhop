@@ -34,50 +34,56 @@
 	right: 3px;
 	bottom: 3px;
 	border-radius: 100%;
-  }
+}
 
-  #bellhop-button-image {
+#bellhop-button-image {
 	width: 36px;
 	height: 36px;
 	padding-top: 15%;
 	pointer-events: none;
-  }
+}
 
-  #bellhop-phone-button {
+#bellhop-phone-button {
 	position: absolute;
 	text-align: center;
 	z-index: 4;
 	top: 3px;
 	bottom: 3px;
-  }
+}
 
-  #bellhop-email-button {
+#bellhop-email-button {
 	position: absolute;
 	text-align: center;
 	z-index: 3;
 	top: 3px;
 	bottom: 3px;
-  }
+}
 
-  .hidden {
+.hidden {
 	transition: left .3s ease, right .3s ease;
 	left: 3px;
 	right: 3px;
-  }
+}
 
-  .showing_phone {
-	transition: left .3s ease, right .3s ease;
-	left: -75px;
-	right: 75px;
-  }
+#render_here {
+	a:first-child {
+		.sub-button:not(.hidden) {
+			transition: left .3s ease, right .3s ease;
+			left: -75px;
+			right: 75px;
+		}
+	}
 
-  .showing_email {
-	transition: left .3s ease, right .3s ease;
-	left: -155px;
-	right: 155px;
-  }
+	a:nth-child(2) {
+		.sub-button:not(.hidden) {
+			transition: left .3s ease, right .3s ease;
+			left: -155px;
+			right: 155px;
+		}
+	}
+}
 
-  .sub-button {
+.sub-button {
 	width: 54px;
 	height: 54px;
 	border-radius: 100%;
@@ -91,4 +97,4 @@
 	z-index: 100;
 	border-radius: 100%;
 	cursor: pointer;
-  }
+}

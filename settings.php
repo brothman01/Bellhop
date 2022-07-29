@@ -102,7 +102,7 @@ function bh_phone_cb( $args ) {
  */
 function bh_email_cb( $args ) {
     // Get the value of the setting we've registered with register_setting()
-    $options = get_option( 'bh_options' );
+    $options = bh_get_options();
     ?>
 	<!-- output the html for the field being added -->
     <input
