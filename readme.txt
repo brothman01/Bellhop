@@ -3,7 +3,7 @@ Contributors: brothman01
 Tags: react, bellhop, contact, real estate, real-estate, support
 Requires at least: 4.2
 Tested up to: 6.0.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL
 
 Just a simple WordPress plugin that adds a lightweight, responsive bellhop button that allows any visitors to your site to contact the front desk easily and in several ways.

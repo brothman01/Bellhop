@@ -16,6 +16,20 @@ function bh_options_page() {
 add_action( 'admin_menu', 'bh_options_page' );
 
 
+    /**
+	 * Helper function to get Bellhop options or return empty strings if there are no values.
+	 *
+	 * @since 1.0.2
+	 */
+	function bh_get_options() {
+		$defaults = array(
+			'bh_field_phone'  => '',
+			'bh_field_email'  => ''
+		);
+
+		return get_option( 'bh_options', $defaults );
+	}
+
 /**
  * Register the setting, initialize and add the section + fields to the section
  */
@@ -69,7 +83,7 @@ add_action( 'admin_init', 'bh_settings_init' );
  */
 function bh_phone_cb( $args ) {
     // Get the value of the setting we've registered with register_setting()
-    $options = get_option( 'bh_options' );
+    $options = bh_get_options();
     ?>
 	<!-- output the html for the field being added -->
     <input

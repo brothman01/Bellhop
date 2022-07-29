@@ -3,8 +3,8 @@
  * Plugin Name:       Bellhop
  * Description:       Just a simple WordPress Bellhop is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 4.5
- * Tested Up To:      6.1
- * Version:           1.0.1
+ * Tested Up To:      6.0.1
+ * Version:           1.0.2
  * Author:            Ben Rothman
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -52,25 +52,25 @@ require_once('settings.php');
 
 		wp_register_script( 'Bellhop-react', plugin_dir_url( __FILE__ ) . '/build/index.js', [ 'wp-element' ], 'all', true );
 
-		$settings = get_option('bh_options', array(
-			'phonenumber'  => '',
-			'emailaddress' => ''
-		) );
+		$settings = bh_get_options();
 
-		if ( $settings ) {
+		// if ( empty( $settings['bh_field_phone'] ) && empty( $settings['bh_field_email'] ) ) {
+		// 	return;
+		// }
+
 
 			$the_data = array(
 				'phonenumber'  => $settings['bh_field_phone'],
 				'emailaddress' => $settings['bh_field_email'],
-
 			);
-			wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
+
+		wp_localize_script( 'Bellhop-react', 'bh_settings', $the_data );
 			
-		}
 
 		wp_enqueue_script( 'Bellhop-react' );
 
 	}
+
 
  }
 
