@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Bellhop
+ * Plugin Name:       Bellhop 
  * Description:       Just a simple WordPress Bellhop is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 4.5
  * Tested Up To:      6.0.1
