@@ -1,5 +1,5 @@
 <h1 align="center">Bellhop
-	<img src="https://img.shields.io/static/v1?ConciergeWPVersion=&message=v1.0.2&label=&color=999&style=flat-square"><br />
+	<img src="https://img.shields.io/static/v1?ConciergeWPVersion=&message=v1.0.3&label=&color=999&style=flat-square"><br />
 </h1>
 
 <h4 align="center">Just a simple <a href="https://wordpress.org" target="_blank">WordPress</a> plugin that adds a lightweight, responsive bellhop button that allows any visitors to your site to contact the front desk easily and in several ways.</h4>
