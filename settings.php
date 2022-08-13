@@ -83,7 +83,7 @@ add_action( 'admin_init', 'bh_settings_init' );
  */
 function bh_phone_cb( $args ) {
     // Get the value of the setting we've registered with register_setting()
-    $options = bh_get_options();
+    $value = get_option( 'bh_options', 'false' ) !== 'false' ? get_option( 'bh_options' )['bh_field_phone'] : '';
     ?>
 	<!-- output the html for the field being added -->
     <input
@@ -91,7 +91,7 @@ function bh_phone_cb( $args ) {
             type="tel" id="phone"
             name="bh_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-			value="<?php echo $options['bh_field_phone'] ?>">
+			value="<?php echo $value; ?>">
 </input><br />
     <p className="description">This is the phone number that visitors to your site will call when they press the phone button.</p>
     <?php
