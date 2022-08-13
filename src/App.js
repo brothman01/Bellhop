@@ -23,8 +23,12 @@ class App extends React.Component {
     const email = bh_settings.emailaddress;
     return (
       <div>
-        <PhoneButton clicks={this.state.clicks} phonenumber={phonenum} />
-        <EmailButton clicks={this.state.clicks} email={email}/>
+        { 0 !== phonenum.length &&
+          <PhoneButton clicks={this.state.clicks} phonenumber={phonenum} />
+        }
+        { 0 !== email.length &&
+          <EmailButton clicks={this.state.clicks} email={email}/>
+        }
         <div id="bellhop-button" onClick={this.toggle}>
           <img id="bellhop-button-image" src={bell} />
 
