@@ -102,14 +102,14 @@ function bh_phone_cb( $args ) {
  */
 function bh_email_cb( $args ) {
     // Get the value of the setting we've registered with register_setting()
-    $options = get_option( 'bh_options' );
+    $value = get_option( 'bh_options', 'false' ) !== 'false' ? get_option( 'bh_options' )['bh_field_email'] : '';
     ?>
 	<!-- output the html for the field being added -->
     <input
             id="<?php echo esc_attr( $args['label_for'] ); ?>"
             type="email"
             name="bh_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
-			value="<?php echo $options['bh_field_email'] ?>">
+			value="<?php echo $value; ?>">
     </input><br />
     <p className="description">This is the email address that visitors to your site will email when they press the email button.</p>
 
