@@ -4,7 +4,7 @@
  * Description:       Just a simple WordPress Bellhop is a lightweight responsive bellhop button that allows for any visitors to your site to contact the front desk easily and in several ways.
  * Requires at least: 4.5
  * Tested Up To:      6.0.1
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Ben Rothman
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
