@@ -1,6 +1,6 @@
 {
 	"name": "bellhop",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "Just a simple boilerplate to develop a plugin for WordPress that uses react.  This is the minimum needed for a react plugin, you can add goodies later.",
 	"author": "Ben Rothman",
 	"license": "GPL-2.0-or-later",
